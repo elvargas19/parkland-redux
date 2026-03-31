@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ParkSection from "@/components/ParkSection";
@@ -90,6 +91,10 @@ const sections = [
 ];
 
 const Index = () => {
+  useEffect(() => {
+    window.location.href = "https://noesiaescondado.com/";
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
