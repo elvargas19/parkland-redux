@@ -91,6 +91,10 @@ const sections = [
 ];
 
 const Index = () => {
+  useEffect(() => {
+    window.location.href = "https://noesiaescondado.com/";
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
